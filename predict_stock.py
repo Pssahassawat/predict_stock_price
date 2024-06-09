@@ -9,7 +9,10 @@ start = '2010-01-01'
 
 st.title('Stock Price Prediction')
 user_input = st.text_input('Enter a stock symbol')
-data = yf.download(user_input,start=start)
 
-st.subheader('Data from 2010 to now')
-st.write(data.describe())
+if (len(user_input) == 0):
+    st.text('Please enter symbol')
+else:
+    data = yf.download(user_input, start=start)
+    st.subheader('Data from 2010 to now')
+    st.write(data.describe())
