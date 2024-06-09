@@ -16,3 +16,4 @@ else:
     data = yf.download(user_input, start=start)
     st.subheader('Data from 2010 to now')
     st.write(data.describe())
+    st.write(data.tail())
