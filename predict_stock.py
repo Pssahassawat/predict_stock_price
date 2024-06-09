@@ -1,8 +1,10 @@
+!pip install matplotlib
+!pip install yfinance
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
-# from tensorflow.keras import load_model
 import streamlit as st
 
 start = '2010-01-01'
