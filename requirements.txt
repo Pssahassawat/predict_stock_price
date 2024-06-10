@@ -4,4 +4,4 @@ matplotlib
 numpy 
 pandas
 Keras==2.13.1
-sklearn
+scikit-learn
