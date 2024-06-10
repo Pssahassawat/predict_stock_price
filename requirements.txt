@@ -3,5 +3,5 @@ yfinance==0.2.40
 matplotlib
 numpy 
 pandas
-Keras
+Keras==2.13.1
 sklearn
