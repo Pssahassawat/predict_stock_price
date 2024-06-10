@@ -5,3 +5,4 @@ numpy
 pandas
 Keras==2.13.1
 scikit-learn
+tensorflow
