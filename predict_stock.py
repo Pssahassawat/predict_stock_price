@@ -53,5 +53,6 @@ else:
     plt.xlabel('Time')
     plt.ylabel('Price')
     plt.legend()
+    st.subheader('Compare to MA')
     st.pyplot(fig)
-    st.subheader('Compare')
+    
