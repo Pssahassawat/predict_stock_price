@@ -45,7 +45,7 @@ else:
     df_final = df_final['Close']
     ma100 =df_final.rolling(window=100).mean()
     ma200 =df_final.rolling(window=200).mean()
-    plt.figure(figsize=(12,6))
+    fig = plt.figure(figsize=(12,6))
     plt.plot(df_final, 'b', label = 'Original Price')
     plt.plot(y_predicted, 'r', label = 'Predicted Price')
     plt.plot(ma100, 'g', label = 'MA100')
@@ -53,5 +53,5 @@ else:
     plt.xlabel('Time')
     plt.ylabel('Price')
     plt.legend()
-    st.pyplot(plt.show())
+    st.pyplot(fig)
     st.subheader('Compare')
