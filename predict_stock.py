@@ -10,7 +10,9 @@ model = load_model('./lstm_model.h5')
 
 start = '2010-01-01'
 # end = 'none'
-
+st.set_page_config(
+        page_title="Stock Price Prediction"
+)
 st.title('Stock Price Prediction')
 user_input = st.text_input('Enter a stock symbol')
 
